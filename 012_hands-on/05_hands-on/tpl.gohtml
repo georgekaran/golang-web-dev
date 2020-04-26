@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Restaurant's Menu</h2>
+    <h3>Breakfast</h3>
+    {{range .Breakfast}}
+        <h4>{{.Name}} - US$ {{.Price}}</h4>
+    {{end}}
+    <h3>Lunch</h3>
+    {{range .Lunch}}
+        <h4>{{.Name}} - US$ {{.Price}}</h4>
+    {{end}}
+    <h3>Dinner</h3>
+    {{range .Dinner}}
+        <h4>{{.Name}} - US$ {{.Price}}</h4>
+    {{end}}
+</body>
+</html>
