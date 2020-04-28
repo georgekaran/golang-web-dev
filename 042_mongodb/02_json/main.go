@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/GoesToEleven/golang-web-dev/042_mongodb/02_json/models"
+	"./models"
 	"github.com/julienschmidt/httprouter"
 	"net/http"
 )
