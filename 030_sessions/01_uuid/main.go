@@ -18,11 +18,11 @@ func main() {
 func index(w http.ResponseWriter, req *http.Request) {
 	cookie, err := req.Cookie("session")
 	if err != nil {
-		id := uuid.NewV4()
+		id, _ := uuid.NewV4()
 		cookie = &http.Cookie{
 			Name:  "session",
 			Value: id.String(),
-			// Secure: true,
+			// Secure: true, HTTPS Only
 			HttpOnly: true,
 			Path:     "/",
 		}
